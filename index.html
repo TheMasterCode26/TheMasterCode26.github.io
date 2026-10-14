@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>the master code games</title>
+<meta name="description" content="Estudio independiente de videojuegos. Creadores de Pocket Games Hub: juegos clásicos para celular y tableta.">
+<link rel="icon" href="favicon.png">
+<style>
+:root{--bg:#0E1B2C;--ink:#E9F1FF;--soft:#9FB3CC;--acc:#3EF0B5;--card:#15263b;--line:#22374f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 56px}
+a{color:var(--acc)}
+header{display:flex;align-items:center;gap:16px}
+header img{width:64px;height:64px;border-radius:16px}
+.brand{font-size:24px;font-weight:800;letter-spacing:-.01em;line-height:1.1}
+.brand i{font-style:normal;color:var(--acc)}
+.tag{color:var(--soft);font-size:14px;margin:2px 0 0}
+.lang{margin-left:auto;font-size:14px;white-space:nowrap}
+.lang a{margin-left:10px;text-decoration:none}
+.hero{margin:48px 0 0}
+.hero h1{font-size:clamp(28px,6vw,40px);line-height:1.15;margin:0 0 12px;letter-spacing:-.02em}
+.hero p{color:var(--soft);margin:0;max-width:56ch}
+.app{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;margin-top:36px}
+.app img{width:96px;height:96px;border-radius:22px}
+.app h2{margin:0;font-size:22px}
+.app p{margin:4px 0 12px;color:var(--soft)}
+.btn{display:inline-block;background:var(--acc);color:#06281c;font-weight:700;text-decoration:none;padding:10px 18px;border-radius:999px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:14px;color:var(--soft)}
+section.en{display:none}
+:target ~ section.es{display:none}
+:target ~ section.en{display:block}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--soft);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px}
+@media (max-width:480px){.app{grid-template-columns:1fr;text-align:left}.lang{display:none}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="logo.png" alt="Logo de the master code games">
+  <div>
+    <div class="brand">the master code games<i>.</i></div>
+    <p class="tag">Estudio independiente de videojuegos · México</p>
+  </div>
+  <nav class="lang"><a href="#">Español</a><a href="#en">English</a></nav>
+</header>
+
+<span id="en"></span>
+
+<section class="es" lang="es">
+  <div class="hero">
+    <h1>Juegos clásicos, siempre a la mano.</h1>
+    <p>Hacemos juegos para celular y tableta que se pueden jugar en cualquier momento, incluso sin internet.</p>
+  </div>
+  <div class="app">
+    <img src="pocket-games-hub.png" alt="Ícono de Pocket Games Hub">
+    <div>
+      <h2>Pocket Games Hub</h2>
+      <p>Más de 40 juegos clásicos en español e inglés: cartas, tablero, lógica y palabras.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.themastercodegames.pocketgameshub">Ver en Google Play</a>
+    </div>
+  </div>
+  <ul class="chips"><li>Ajedrez</li><li>Damas</li><li>Dominó</li><li>Solitario</li><li>Corazones</li><li>Crucigrama</li><li>Sudoku</li><li>2048</li><li>y muchos más</li></ul>
+</section>
+
+<section class="en" id="en-content" lang="en">
+  <div class="hero">
+    <h1>Classic games, always at hand.</h1>
+    <p>We make games for phones and tablets that you can play anytime, even offline.</p>
+  </div>
+  <div class="app">
+    <img src="pocket-games-hub.png" alt="Pocket Games Hub icon">
+    <div>
+      <h2>Pocket Games Hub</h2>
+      <p>40+ classic games in English and Spanish: cards, board, logic and word games.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.themastercodegames.pocketgameshub">Get it on Google Play</a>
+    </div>
+  </div>
+  <ul class="chips"><li>Chess</li><li>Checkers</li><li>Dominoes</li><li>Solitaire</li><li>Hearts</li><li>Crossword</li><li>Sudoku</li><li>2048</li><li>and many more</li></ul>
+</section>
+
+<footer>
+  <span>© 2026 the master code games</span>
+  <a href="privacidad.html">Política de privacidad / Privacy Policy</a>
+  <a href="mailto:elcodigomaestro737@gmail.com">elcodigomaestro737@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>
